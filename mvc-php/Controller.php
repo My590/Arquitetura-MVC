@@ -5,7 +5,7 @@ class Controller {
     private $model;
 
     public function __construct(Model $model) {
-        $this->model = $model
+        $this->model = $model;
     }
 
     public function somar () {
@@ -21,13 +21,12 @@ class Controller {
     }
 
     public function dividir () {
-        if ($this->model->numero2 ! = 0) 
+        if ($this->model->numero2 != 0) 
         {
             $this->model->resultado = $this->model->numero1 / $this->model->numero2;
-        }
-         else 
+        } else 
         {
-            $this->model->resultado = "Erro: divisão por zero!"
+            $this->model->resultado = "Erro: divisão por zero!";
         }
     }
 }
